@@ -1,7 +1,7 @@
-# 簡単プログラミング！XEM の現在価格を表示しよう（Node.js 編）  
+# 簡単プログラミング！XEMの現在価格を表示しよう（Node.js編）
+
 https://nemlog.nem.social/blog/51551
 
-## はじめに
 
 みなさん、こんにちは。
 
@@ -141,7 +141,26 @@ const ccxt = require('ccxt');
     }
 })();
 ```
-特に難しい内容ではないので、コメントを読んでいただければだいたい理解できると思います。
+とくに難しい内容ではないので、コメントを読んでいただければだいたい理解できると思います。
+
+このコードで重要な点は、
+
+```javascript
+
+(async function () {
+```
+と
+
+```javascript
+        // ティッカー情報を同期処理として取得します
+        const ticker = await zaif.fetchTicker(pair);
+```
+
+の部分で、ティッカー情報が取得できるまで待ってくれます。もし、 `await` の記述がなかった場合は、ティッカー情報の取得を待つことなく `ticker` 変数に値が入りますが、まだ取得できていないので、値が存在しないことを表現する `null` という値が入ってしまいます。
+
+null - JavaScript | MDN
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/null
+
 
 このコードを実行するには次のようにコンソールに入力してください。
 
@@ -157,7 +176,7 @@ XEM 現在価格: 17.08 JPY
 ## まとめ
 
 Node.js環境を作って、ライブラリをインストールして、コードを実行するという一連の流れを紹介しました。
-今回はGitPodを利用しているのでNode.jsの導入は必要ありませんでしたが、通常は自分のPCにNode.jsをインストールする必要があります。
+今回はGitPodを利用しているのでNode.jsの導入は必要ありませんでしたが、通常は自分のPCにNode.js環境をインストールする必要があります。
 
 今回のようなNode.jsを使ったコードでは、ブラウザではなく、コンソールに表示するだけなので、すっきりとしたコード内容になっていると思います。
 
@@ -165,4 +184,5 @@ Node.js環境を作って、ライブラリをインストールして、コー�
 ## 関連情報へのリンク
 
 - [Node.js とは | Node.js](https://nodejs.org/ja/about/)
+- [簡単プログラミング！XEM の現在価格を表示しよう](https://nemlog.nem.social/blog/51387)
 
