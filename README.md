@@ -1,7 +1,8 @@
-# 簡単プログラミング！XEMの現在価格を表示しよう（Node.js編）
-‘
-https://nemlog.nem.social/blog/51551
+- [簡単プログラミング！XEMの現在価格を表示しよう（Node.js編）](https://nemlog.nem.social/blog/51551)
+- [nemlog記事とプロフィール](https://nemlog.nem.social/profile/5648)
+- [nemlog投稿リポジトリに移動](https://github.com/naoland/nemlog-posts)
 
+# 簡単プログラミング！XEMの現在価格を表示しよう（Node.js編）
 
 みなさん、こんにちは。
 
@@ -14,7 +15,7 @@ Node.jsを使ってプログラムを書くと、サーバー上だったり、�
 
 ## Gitpodのワークスペースの起動
 
-[ここ](https://github.com/naoland/nemlog-post-51551)にアクセスして、「Gitpod」ボタンをクリックしてください。
+[ここにアクセス](https://github.com/naoland/nemlog-post-51551)して、「Gitpod」ボタンをクリックしてください。
 「Gitpod」ボタンが表示されていない方は、過去記事を参考にしてクロームの機能拡張をインストールしてください。
 具体的な操作方法は、本記事の後半にGIF動画がありますので、そちらをご覧ください。
 
